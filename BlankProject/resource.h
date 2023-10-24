@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // fichier Include Microsoft Visual C++.
-// Utilisé par GameEngine.rc
+// Utilisé par BlankProject.rc
 //
 #define IDI_MAINICON                    101
 #define IDS_PERGAMENAME                 102

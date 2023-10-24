@@ -27,6 +27,9 @@
     <ClCompile Include="source\pch.cpp">
       <Filter>pch</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Application.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\pch.h">
@@ -35,9 +38,12 @@
     <ClInclude Include="resource.h">
       <Filter>Fichiers de ressources</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Application.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="GameEngine.rc">
+    <ResourceCompile Include="BlankProject.rc">
       <Filter>Fichiers de ressources</Filter>
     </ResourceCompile>
   </ItemGroup>

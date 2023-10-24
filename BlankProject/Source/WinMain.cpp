@@ -15,27 +15,29 @@ void InitializeWindow();
 void MessageLoop();
 LRESULT CALLBACK WindowProcess(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 
+/*
 int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 {
 
-	/* - Initialize Global Variables - */
+	// Initialize Global Variables
 	InitializeVariables();
 
 
-	/* - Create Window Class - */
+	// Create Window Class
 	CreateWindowClass();
 
 
-	/* - Create and Display our Window  - */
+	// Create and Display our Window
 	InitializeWindow();
 
 
-	/* - Listen for Message events - */
+	// Listen for Message events
 	MessageLoop();
 
 
 	return 0;
 }
+*/
 
 LRESULT CALLBACK WindowProcess(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {

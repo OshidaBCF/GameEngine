@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{9b9d0e23-f766-4668-ba68-42ebba492991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Platform">
+      <UniqueIdentifier>{4dacfec4-8e04-445a-a15e-63fa823dfb2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Platform\Windows">
+      <UniqueIdentifier>{1de43a04-ee87-459c-a2ae-a036088f6f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Platform">
+      <UniqueIdentifier>{76821a32-4648-4265-abb4-78143de65608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Platform\Windows">
+      <UniqueIdentifier>{756a1e25-1c50-40df-93da-498bd20ae4d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Engine.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Platform\Windows\iApplication.cpp">
+      <Filter>Fichiers sources\Platform\Windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Engine.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\Windows\IApplication.h">
+      <Filter>Fichiers d%27en-tête\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\Windows\WinEntry.h">
+      <Filter>Fichiers d%27en-tête\Platform\Windows</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
