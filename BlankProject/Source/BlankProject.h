@@ -1,9 +1,8 @@
 #pragma once
 
-#ifdef WIN32
-	#include <Windows.h>
-#endif
-
+#include <Windows.h>
 #include <string>
+
+#include "../resource.h"
 
 #include "Core/Core.h"
