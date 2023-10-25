@@ -28,6 +28,18 @@
     <Filter Include="Fichiers d%27en-tête\Platform\Windows">
       <UniqueIdentifier>{756a1e25-1c50-40df-93da-498bd20ae4d0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Platform\Common">
+      <UniqueIdentifier>{8f0c2d2f-76fa-407d-b587-a315b1c0776a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Platform\Common">
+      <UniqueIdentifier>{fc27e6f7-f409-4fb2-b0c7-af4406577405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Platform\Core">
+      <UniqueIdentifier>{e7873fee-b688-43fe-8210-386d9fd14103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Platform\Core">
+      <UniqueIdentifier>{76defb55-75e3-4902-8de4-840774b326dc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Engine.cpp">
@@ -35,6 +47,15 @@
     </ClCompile>
     <ClCompile Include="Source\Platform\Windows\iApplication.cpp">
       <Filter>Fichiers sources\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Logger.cpp">
+      <Filter>Fichiers sources\Platform\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\PerGameSettings.cpp">
+      <Filter>Fichiers sources\Platform\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Time.cpp">
+      <Filter>Fichiers sources\Platform\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +67,15 @@
     </ClInclude>
     <ClInclude Include="Source\Platform\Windows\WinEntry.h">
       <Filter>Fichiers d%27en-tête\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Logger.h">
+      <Filter>Fichiers d%27en-tête\Platform\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\PerGameSettings.h">
+      <Filter>Fichiers d%27en-tête\Platform\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Time.h">
+      <Filter>Fichiers d%27en-tête\Platform\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

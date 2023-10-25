@@ -8,6 +8,10 @@ int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 {
 	auto EntryApp = EntryApplication();
 
+	PerGameSettings GameSettings;
+	EntryApp->SetupPerGameSettings();
+
+	Logger logger;
 	EntryApp->Initialize();
 
 	MSG msg = { 0 };

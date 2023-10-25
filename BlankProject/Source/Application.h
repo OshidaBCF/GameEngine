@@ -14,6 +14,9 @@ public:
 
 
 public:
+	// Called to setup our pergame settings
+	void SetupPerGameSettings();
+
 	// Called to Initialize the Application
 	void Initialize();
 	

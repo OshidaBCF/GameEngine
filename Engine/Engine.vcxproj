@@ -11,10 +11,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Common\Logger.cpp" />
+    <ClCompile Include="Source\Common\Time.cpp" />
+    <ClCompile Include="Source\Core\PerGameSettings.cpp" />
     <ClCompile Include="Source\Engine.cpp" />
     <ClCompile Include="Source\Platform\Windows\iApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Common\Logger.h" />
+    <ClInclude Include="Source\Common\Time.h" />
+    <ClInclude Include="Source\Core\PerGameSettings.h" />
     <ClInclude Include="Source\Engine.h" />
     <ClInclude Include="Source\Platform\Windows\IApplication.h" />
     <ClInclude Include="Source\Platform\Windows\WinEntry.h" />
@@ -62,7 +68,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>Engine.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>D:\Users\Swann\Documents\GameEngine\Engine\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Engine\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -81,7 +87,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>Engine.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>D:\Users\Swann\Documents\GameEngine\Engine\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Engine\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
