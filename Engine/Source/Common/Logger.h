@@ -17,8 +17,8 @@ public:
 
 	// Print to Log File
 	static void PrintLog(const WCHAR* fmt, ...);
-	static std::wstring LogDirectory();
-	static std::wstring LogFile();
+	static WSTRING LogDirectory();
+	static WSTRING LogFile();
 
 	// Print a line of '-'
 	static void PrindDebugSeparator();

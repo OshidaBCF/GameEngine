@@ -110,6 +110,9 @@
     <ClCompile Include="Source\Platform\Windows\Win32Utils.cpp">
       <Filter>Source\Platform\Windows\Private</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Platform\Windows\w32Caption.cpp">
+      <Filter>Source\Platform\Windows\Private</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Engine.h">
@@ -159,6 +162,9 @@
     </ClInclude>
     <ClInclude Include="Source\Platform\Windows\WinEntry.h">
       <Filter>Source\Platform\Windows\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\Windows\w32Caption.h">
+      <Filter>Source\Platform\Windows\Classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

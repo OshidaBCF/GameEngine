@@ -26,11 +26,11 @@ void Logger::PrintLog(const WCHAR* fmt, ...)
 	// Log File Location = %appdata%/GameEngine/Log/Log_2023_10_25_09_27_XX.log
 	std::wfstream outfile;
 	
-	outfile.open(std::wstring(LogDirectory() + L"/" + LogFile()), std::ios_base::app);
+	outfile.open(WSTRING(LogDirectory() + L"/" + LogFile()), std::ios_base::app);
 
 	if (outfile.is_open())
 	{
-		std::wstring s = buf;
+		WSTRING s = buf;
 		outfile << L"[" << Time::GetDateTimeString() << L"]  " << s;
 		outfile.close();
 		//OutputDebugString(s.c_str());
@@ -41,7 +41,7 @@ void Logger::PrintLog(const WCHAR* fmt, ...)
 	}
 }
 
-std::wstring Logger::LogDirectory()
+WSTRING Logger::LogDirectory()
 {
 	WCHAR Path[1024];
 	WCHAR* AppDataLocal;
@@ -56,7 +56,7 @@ std::wstring Logger::LogDirectory()
 
 }
 
-std::wstring Logger::LogFile()
+WSTRING Logger::LogFile()
 {
 	WCHAR File[1024];
 	wcscpy_s(File, PerGameSettings::GameName());
@@ -68,10 +68,10 @@ std::wstring Logger::LogFile()
 
 void Logger::PrindDebugSeparator()
 {
-	std::wstring s = L"\n----------------------------------------------------------------------------\n\n";
+	WSTRING s = L"\n----------------------------------------------------------------------------\n\n";
 #ifdef _DEBUG
 	std::wfstream outfile;
-	outfile.open(std::wstring(LogDirectory() + L"/" + LogFile()), std::ios_base::app);
+	outfile.open(WSTRING(LogDirectory() + L"/" + LogFile()), std::ios_base::app);
 
 	if (outfile.is_open())
 	{
@@ -116,8 +116,8 @@ void Logger::StartMTail()
 	WCHAR path[MAX_PATH] = { 0 };
 	GetCurrentDirectory(MAX_PATH, path);
 
-	std::wstring url = path + std::wstring(L"/mTAIL.exe");
-	std::wstring params = L" \"" + LogDirectory() + L"/" + LogFile() + L"\" /start";
+	WSTRING url = path + WSTRING(L"/mTAIL.exe");
+	WSTRING params = L" \"" + LogDirectory() + L"/" + LogFile() + L"\" /start";
 	ShellExecute(0, NULL, url.c_str(), params.c_str(), NULL, SW_SHOWDEFAULT);
 }
 

@@ -5,7 +5,7 @@ namespace Win32
 	class ENGINE_API SubObject
 	{
 	public:
-		SubObject(std::wstring className, std::wstring classTitle, HICON icon);
+		SubObject(WSTRING className, WSTRING classTitle, HICON icon);
 		~SubObject();
 
 		virtual void RegisterNewClass();
@@ -14,20 +14,18 @@ namespace Win32
 	protected:
 		static LRESULT CALLBACK	SetupMessageHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 		static LRESULT AssignMessageHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
-		virtual LRESULT CommonMessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
-
-		virtual LRESULT MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) = 0;
+		virtual LRESULT MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
 
 	protected:
-		std::wstring m_Class;
-		std::wstring m_Title;
+		WSTRING m_Class;
+		WSTRING m_Title;
 
 		HICON m_hIcon;
 
 		HWND m_Handle;
 
 	public:
-		HWND GetHandle() { return m_Handle; }
-
+		HWND Handle() { return m_Handle; }
+		void Handle(HWND hwnd) { m_Handle = hwnd; }
 	};
 }

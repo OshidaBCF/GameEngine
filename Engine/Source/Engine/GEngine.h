@@ -17,7 +17,7 @@ namespace Engine
 	void ENGINE_API SetMode(EngineMode mode);
 	EngineMode ENGINE_API GetMode();
 
-	std::wstring ENGINE_API EngineModeToString();
+	WSTRING ENGINE_API EngineModeToString();
 }
 
 using namespace Engine;

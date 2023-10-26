@@ -9,7 +9,7 @@ void CmdLineArgs::ReadArguments()
 
     for (int i = 1; i < argc; ++i)
     {
-        std::wstring key = argv[i];
+        WSTRING key = argv[i];
         if (key[0] == '-')
         {
             key.erase(0, 1);

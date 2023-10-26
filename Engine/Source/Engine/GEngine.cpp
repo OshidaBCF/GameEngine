@@ -13,7 +13,7 @@ namespace Engine
 		return g_GameEngine.GetEngineMode();
 	}
 
-	std::wstring ENGINE_API EngineModeToString()
+	WSTRING ENGINE_API EngineModeToString()
 	{
 		switch (Engine::GetMode())
 		{

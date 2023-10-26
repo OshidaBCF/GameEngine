@@ -26,6 +26,7 @@
     <ClCompile Include="Source\Platform\Windows\SubObject.cpp" />
     <ClCompile Include="Source\Platform\Windows\Win32Utils.cpp" />
     <ClCompile Include="Source\Platform\Windows\Window.cpp" />
+    <ClCompile Include="Source\Platform\Windows\w32Caption.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Common\CmdLineArgs.h" />
@@ -44,6 +45,7 @@
     <ClInclude Include="Source\Platform\Windows\Win32Utils.h" />
     <ClInclude Include="Source\Platform\Windows\Window.h" />
     <ClInclude Include="Source\Platform\Windows\WinEntry.h" />
+    <ClInclude Include="Source\Platform\Windows\w32Caption.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
